@@ -1,6 +1,6 @@
 import React from "react";
 import {View, Text, StyleSheet, Image, ImageBackground, Button} from 'react-native'
-//import FlatButton from "../components/buttons";
+import FlatButton from "../components/buttons";
 import AnimatedLottieView from 'lottie-react-native';
 
 
@@ -8,12 +8,18 @@ const HomeScreen = ({ navigation }) => {
     return (
         <ImageBackground source={require('../assets/color_Background.jpg')} style={styles.container} >
             
-            <Button 
+            <View style={styles.confetti}>
+                <AnimatedLottieView source={require('../assets/lottie/confetti2.json')}
+                 style={{width: '90%', aspectRatio: 1}}
+                 autoPlay
+                 loop
+                 />
+            </View >
+            <FlatButton 
                     text= "Tap to Start"
                     onPress={() =>
-                        navigation.navigate('Timer')}
-                
-            ></Button>
+                        navigation.navigate('Timer')}     
+            ></FlatButton>
 
         </ImageBackground>
 
@@ -42,8 +48,8 @@ const styles = StyleSheet.create({
                  
     },
     confetti:{
-        justifyContent: 'center',
-        alignContent: 'center',
+        left: 25,
+        top: 240,
         position: 'absolute'
         
     },

@@ -15,7 +15,11 @@ const MyStack = () => {
           component={HomeScreen}
           options={{headerShown: false}}
         />
-        <Stack.Screen name="Timer" component={TimerScreen} />
+        <Stack.Screen 
+        name="Timer" 
+        component={TimerScreen} 
+        options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
