@@ -1,6 +1,6 @@
 import React from "react";
 import {View, Text, StyleSheet, Image, ImageBackground, Button} from 'react-native'
-import FlatButton from "../components/buttons";
+//import FlatButton from "../components/buttons";
 import AnimatedLottieView from 'lottie-react-native';
 
 
