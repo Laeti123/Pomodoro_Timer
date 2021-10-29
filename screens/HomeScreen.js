@@ -7,21 +7,13 @@ import AnimatedLottieView from 'lottie-react-native';
 const HomeScreen = ({ navigation }) => {
     return (
         <ImageBackground source={require('../assets/color_Background.jpg')} style={styles.container} >
-            <View style={styles.confetti}>
-                <AnimatedLottieView source={require('../assets/lottie/confetti2.json')}
-                 style={{width: '90%', aspectRatio: 1}}
-                 autoPlay
-                 loop
-                 />
-            </View >
             
-            
-            <FlatButton 
+            <Button 
                     text= "Tap to Start"
                     onPress={() =>
                         navigation.navigate('Timer')}
                 
-            ></FlatButton>
+            ></Button>
 
         </ImageBackground>
 
@@ -46,12 +38,14 @@ const styles = StyleSheet.create({
     container:{
         flex: 1,
         justifyContent: 'center',
-        alignContent: 'center',           
+        alignContent: 'center',  
+                 
     },
     confetti:{
-        position: 'absolute',
-        left: 30,
-        top: 150
+        justifyContent: 'center',
+        alignContent: 'center',
+        position: 'absolute'
+        
     },
    
 });
