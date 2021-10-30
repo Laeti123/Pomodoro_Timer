@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignContent: 'center',
         left: 10,
-        bottom: 0,
+        bottom: -20,
         position: 'absolute',     
     }, 
     titleContainer:{
