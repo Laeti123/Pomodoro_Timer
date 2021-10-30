@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Button, Text, ImageBackground, StyleSheet} from 'react-native'
+import {View, Button, Text, ImageBackground, StyleSheet, Image} from 'react-native'
 import AnimatedLottieView from 'lottie-react-native';
 
 const TimerScreen = ({ navigation}) => {
@@ -12,6 +12,18 @@ const TimerScreen = ({ navigation}) => {
                  loop
                  />
             </View >
+
+            <View style={styles.speechBubbleContainer}>
+                <Image
+                    //fadeDuration={2000}
+                    source={require('../assets/Speechbubble.png')}
+                    style={styles.speechbubble}
+                ></Image>
+            </View>
+
+            <View style={styles.titleContainer}>
+                <Text style={styles.title}>Starte den Timer und beginne zu grinsen</Text>
+            </View>
         </ImageBackground>
     );
 };
@@ -32,6 +44,26 @@ const styles = StyleSheet.create({
         bottom: 0,
         position: 'absolute',
         
+    },
+    speechBubbleContainer:{
+        justifyContent: 'center',
+        alignContent: 'center',
+        position: 'absolute',
+        top: 190,
+        right: -60   
+    },
+    speechbubble:{
+        width: 500,
+        height: 500
+    },
+    titleContainer:{
+        alignItems: 'center',
+        top: 60
+    },
+    title:{
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: 'white',
     }
 
 });
