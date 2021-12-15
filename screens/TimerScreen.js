@@ -24,15 +24,7 @@ const TimerScreen = ({ navigation}) => {
                     autoPlay
                     loop
                     /> 
-            </View>
-
-            <View>
-        
-            </View>
-
-            <View>
-
-            </View>
+            </View>  
 
         </ImageBackground>
     );
@@ -66,8 +58,8 @@ const styles = StyleSheet.create({
     doggoContainer:{
         alignItems: 'center',
         left: 100  
-    }
-
+    },
+   
 });
 
 
