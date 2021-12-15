@@ -15,7 +15,7 @@ const TimerScreen = ({ navigation}) => {
             </View >
 
             <View style={styles.titleContainer}>
-                <Text style={styles.title}>Start and smile</Text>
+                <Text style={styles.title}>Start and study</Text>
             </View>
 
             <View style={styles.doggoContainer}>
