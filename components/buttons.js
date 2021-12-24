@@ -25,15 +25,15 @@ const styles = StyleSheet.create({
 
     button: {
         borderRadius: 10,
-        backgroundColor: 'transparent',
-       
-           
+        backgroundColor: 'transparent',       
     },
+    
     buttonText: {
-        color: 'white',
+        color: 'black',
         fontWeight: 'bold',
         fontSize: 20,
-        textAlign: 'center'
+        textAlign: 'center',
+        top: 200
     }
 
 

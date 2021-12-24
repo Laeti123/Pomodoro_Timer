@@ -6,10 +6,10 @@ import AnimatedLottieView from 'lottie-react-native';
 
 const HomeScreen = ({ navigation }) => {
     return (
-        <ImageBackground source={require('../assets/color_Background.jpg')} style={styles.container} >
+        <ImageBackground source={require('../assets/TimerScreenColor.jpg')} style={styles.container} >
             
-            <View style={styles.confetti}>
-                <AnimatedLottieView source={require('../assets/lottie/confetti2.json')}
+            <View style={styles.students}>
+                <AnimatedLottieView source={require('../assets/lottie/students.json')}
                  style={{width: '90%', aspectRatio: 1}}
                  autoPlay
                  loop
@@ -26,15 +26,6 @@ const HomeScreen = ({ navigation }) => {
     );
   };
 
-/*
-<View style={styles.confetti}>
-                <AnimatedLottieView source={require('../assets/lottie/confetti2.json')}
-                 style={{width: '90%', aspectRatio: 1}}
-                 autoPlay
-                 loop
-                 />
-            </View >
-*/
 
 export default HomeScreen
 
@@ -47,7 +38,7 @@ const styles = StyleSheet.create({
         alignContent: 'center',  
                  
     },
-    confetti:{
+    students:{
         left: 25,
         top: 240,
         position: 'absolute'
