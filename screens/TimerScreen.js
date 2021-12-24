@@ -6,9 +6,9 @@ import { ScreenStackHeaderRightView } from "react-native-screens";
 const TimerScreen = ({ navigation}) => {
     return (
         <ImageBackground source={require('../assets/TimerScreenColor.jpg')} style={styles.container} >
-            <View style={styles.girlContainer}>
-                <AnimatedLottieView source={require('../assets/lottie/happyGirl.json')}
-                 style={{width: '100%', aspectRatio: 1}}
+            <View style={styles.studyContainer}>
+                <AnimatedLottieView source={require('../assets/lottie/study.json')}
+                 style={{width: '90%', aspectRatio: 1}}
                  autoPlay
                  loop
                  />
@@ -18,13 +18,6 @@ const TimerScreen = ({ navigation}) => {
                 <Text style={styles.title}>Start and study</Text>
             </View>
 
-            <View style={styles.doggoContainer}>
-                <AnimatedLottieView source={require('../assets/lottie/cuteDoggo.json')}
-                    style={{width: '25%', aspectRatio: 1}}
-                    autoPlay
-                    loop
-                    /> 
-            </View>  
 
         </ImageBackground>
     );
@@ -39,11 +32,11 @@ const styles = StyleSheet.create({
     container:{
         flex: 1,
     },
-    girlContainer:{
+    studyContainer:{
         justifyContent: 'center',
         alignContent: 'center',
-        left: 10,
-        bottom: -20,
+        left: 40,
+        bottom: -40,
         position: 'absolute',     
     }, 
     titleContainer:{
