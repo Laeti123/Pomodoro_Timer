@@ -21,6 +21,14 @@ const HomeScreen = ({ navigation }) => {
                         navigation.navigate('Timer')}     
             ></FlatButton>
 
+            <View>
+                <AnimatedLottieView source={require('../assets/lottie/students.json')}
+                style={{width: '90%', aspectRatio: 1}}
+                autoPlay
+                loop
+                />
+            </View>
+
         </ImageBackground>
 
     );
