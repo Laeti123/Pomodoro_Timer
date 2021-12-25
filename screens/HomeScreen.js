@@ -8,6 +8,10 @@ const HomeScreen = ({ navigation }) => {
     return (
         <ImageBackground source={require('../assets/TimerScreenColor.jpg')} style={styles.container} >
             
+            <View style={styles.titleContainer}>
+                <Text style={styles.title}>Your Pomodoro Session</Text>
+            </View>
+
             <FlatButton 
                     text= "Tap to Start"
                     onPress={() =>
@@ -21,6 +25,21 @@ const HomeScreen = ({ navigation }) => {
                 loop
                 />
             </View>
+
+            <View>
+                <AnimatedLottieView source={require('../assets/lottie/studyLines.json')}
+                style={{width: '80%', 
+                        aspectRatio: 1,
+                        position: 'absolute',
+                        bottom: -110,
+                        left: 38}}
+                autoPlay
+                loop
+                />
+            </View>
+
+           
+
             
         </ImageBackground>
 
@@ -37,11 +56,19 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignContent: 'center',  
+        width: '100%', 
+        height: '100%'
                  
     },
-    students:{
-        position: 'absolute'
-        
+    titleContainer:{
+        position: 'absolute',
+        alignItems: 'center',
+        top: 60,
+        left: 90
     },
-   
+    title:{
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: 'white',
+    },
 });
