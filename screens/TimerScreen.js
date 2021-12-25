@@ -48,10 +48,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white',
     },
-    doggoContainer:{
-        alignItems: 'center',
-        left: 100  
-    },
+   
    
 });
 

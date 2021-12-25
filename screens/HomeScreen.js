@@ -8,13 +8,6 @@ const HomeScreen = ({ navigation }) => {
     return (
         <ImageBackground source={require('../assets/TimerScreenColor.jpg')} style={styles.container} >
             
-            <View style={styles.students}>
-                <AnimatedLottieView source={require('../assets/lottie/students.json')}
-                 style={{width: '90%', aspectRatio: 1}}
-                 autoPlay
-                 loop
-                 />
-            </View >
             <FlatButton 
                     text= "Tap to Start"
                     onPress={() =>
@@ -22,13 +15,13 @@ const HomeScreen = ({ navigation }) => {
             ></FlatButton>
 
             <View>
-                <AnimatedLottieView source={require('../assets/lottie/students.json')}
-                style={{width: '90%', aspectRatio: 1}}
+                <AnimatedLottieView source={require('../assets/lottie/workingDude.json')}
+                style={{width: '100%', aspectRatio: 1}}
                 autoPlay
                 loop
                 />
             </View>
-
+            
         </ImageBackground>
 
     );
@@ -47,8 +40,6 @@ const styles = StyleSheet.create({
                  
     },
     students:{
-        left: 25,
-        top: 240,
         position: 'absolute'
         
     },

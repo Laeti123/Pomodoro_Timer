@@ -26,16 +26,22 @@ const styles = StyleSheet.create({
     },
 
     button: {
+        width:'40%',    
         borderRadius: 10,
-        backgroundColor: 'transparent',       
+        backgroundColor: 'white',
+
     },
     
     buttonText: {
         color: 'black',
         fontWeight: 'bold',
-        fontSize: 20,
+        fontSize: 15,
         textAlign: 'center',
-        top: 200
+        borderRadius: 10,
+       
+        
+       
+
     }
 
 
