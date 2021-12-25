@@ -64,10 +64,10 @@ const styles = StyleSheet.create({
         position: 'absolute',
         alignItems: 'center',
         top: 60,
-        left: 90
+        left: 70
     },
     title:{
-        fontSize: 20,
+        fontSize: 23,
         fontWeight: 'bold',
         color: 'white',
     },
