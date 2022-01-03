@@ -28,15 +28,15 @@ const styles = StyleSheet.create({
 
     button: {
         width:'40%',    
-        borderRadius: 10,
-        backgroundColor: 'floralwhite',
+        borderRadius: 14,
+        backgroundColor: 'cornsilk',
         left: 120,
-        borderWidth: 1.5,
-        borderColor: 'mediumpurple'
+        borderWidth: 3,
+        borderColor: 'antiquewhite'
     },
     
     buttonText: {
-        color: 'mediumpurple',
+        color: 'darkmagenta',
         fontSize: 15,
         fontWeight: 'bold',
         textAlign: 'center',

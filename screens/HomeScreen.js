@@ -69,6 +69,6 @@ const styles = StyleSheet.create({
     title:{
         fontSize: 23,
         fontWeight: 'bold',
-        color: 'white',
+        color: 'cornsilk',
     },
 });
